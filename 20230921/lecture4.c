@@ -25,7 +25,8 @@ int main(void)
 		}
 
 		if (count != 0) {
-			if (count % 100000000 == 0) {
+			if (count % 10000000 == 0) {
+				if (count / 10000000 < 10) printf(" ");
 				printf(" %d%%진행 . . 원주율 : %f ", count / 10000000, (double)circle / count * 4);
 				for (int i = 0; i < count / 100000000; i++) {
 					printf("■");
